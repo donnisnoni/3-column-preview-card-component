@@ -5,3 +5,9 @@
   --color-transparent-white: hsla(0, 0%, 100%, 0.75);
   --color-very-light-gray: hsl(0, 0%, 95%);
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
