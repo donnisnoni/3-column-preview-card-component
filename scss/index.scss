@@ -15,4 +15,11 @@
 body {
   font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  min-height: inherit;
+  flex-direction: column;
 }
