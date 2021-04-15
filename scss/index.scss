@@ -40,74 +40,74 @@ body {
   gap: 2em;
   color: var(--color-transparent-white);
   padding: 3em;
-}
 
-.card:first-child {
-  border-top-left-radius: var(--card-border-radius-size);
-  border-top-right-radius: var(--card-border-radius-size);
-}
+  &:first-child {
+    border-top-left-radius: var(--card-border-radius-size);
+    border-top-right-radius: var(--card-border-radius-size);
+  }
 
-.card:last-child {
-  border-bottom-left-radius: var(--card-border-radius-size);
-  border-bottom-right-radius: var(--card-border-radius-size);
+  &:last-child {
+    border-bottom-left-radius: var(--card-border-radius-size);
+    border-bottom-right-radius: var(--card-border-radius-size);
+  }
+
+  & .icon {
+    width: 4em;
+  }
+
+  & h2 {
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: var(--color-white);
+  }
+
+  & p {
+    line-height: 1.8em;
+  }
+
+  & button {
+    appearance: none;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 25px;
+    border: none;
+    border: 0.2em solid var(--color-white);
+    cursor: pointer;
+    font-family: "Lexend Deca", sans-serif;
+    // font-size: 0.95em;
+    // font-weight: bold;
+    padding: 1em 2.5em;
+    width: max-content;
+
+    &:hover {
+      color: var(--color-white);
+      background-color: transparent;
+    }
+  }
 }
 
 .card-1 {
   background-color: var(--color-bright-orange);
+
+  & button {
+    color: var(--color-bright-orange);
+  }
 }
 
 .card-2 {
   background-color: var(--color-dark-cyan);
+
+  & button {
+    color: var(--color-dark-cyan);
+  }
 }
 
 .card-3 {
   background-color: var(--color-very-dark-cyan);
-}
 
-.card .icon {
-  width: 4em;
-}
-
-.card h2 {
-  font-family: "Big Shoulders Display", sans-serif;
-  text-transform: uppercase;
-  font-size: 2.5em;
-  color: var(--color-white);
-}
-
-.card p {
-  line-height: 1.8em;
-}
-
-.card button {
-  appearance: none;
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 25px;
-  border: none;
-  border: 0.2em solid var(--color-white);
-  cursor: pointer;
-  font-family: "Lexend Deca", sans-serif;
-  // font-size: 0.95em;
-  // font-weight: bold;
-  padding: 1em 2.5em;
-  width: max-content;
-}
-
-.card button:hover {
-  color: var(--color-white);
-  background-color: transparent;
-}
-
-.card-1 button {
-  color: var(--color-bright-orange);
-}
-
-.card-2 button {
-  color: var(--color-dark-cyan);
-}
-
-.card-2 button {
-  color: var(--color-very-dark-cyan);
+  & button {
+    color: var(--color-very-dark-cyan);
+  }
 }
 
 .attribution {
@@ -125,19 +125,21 @@ body {
     flex-direction: row;
   }
 
-  .card button {
-    margin-top: 3em;
-  }
+  .card {
+    & button {
+      margin-top: 3em;
+    }
 
-  .card:first-child {
-    border-top-right-radius: initial;
-    border-top-left-radius: var(--card-border-radius-size);
-    border-bottom-left-radius: var(--card-border-radius-size);
-  }
+    &:first-child {
+      border-top-right-radius: initial;
+      border-top-left-radius: var(--card-border-radius-size);
+      border-bottom-left-radius: var(--card-border-radius-size);
+    }
 
-  .card:last-child {
-    border-bottom-left-radius: 0;
-    border-top-right-radius: var(--card-border-radius-size);
-    border-bottom-right-radius: var(--card-border-radius-size);
+    &:last-child {
+      border-bottom-left-radius: 0;
+      border-top-right-radius: var(--card-border-radius-size);
+      border-bottom-right-radius: var(--card-border-radius-size);
+    }
   }
 }
