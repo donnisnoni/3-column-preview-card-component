@@ -15,6 +15,7 @@
 body {
   font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
+  background-color: var(--color-very-light-gray);
   min-height: 100vh;
 }
 
@@ -22,4 +23,107 @@ body {
   display: flex;
   min-height: inherit;
   flex-direction: column;
+  margin: 0 auto;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 5em 1em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  color: var(--color-transparent-white);
+  padding: 3em;
+}
+
+.card:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card-1 {
+  background-color: var(--color-bright-orange);
+}
+
+.card-2 {
+  background-color: var(--color-dark-cyan);
+}
+
+.card-3 {
+  background-color: var(--color-very-dark-cyan);
+}
+
+.card .icon {
+  width: 4em;
+}
+
+.card h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.card p {
+  line-height: 1.8em;
+}
+
+.card button {
+  appearance: none;
+  background-color: #fff;
+  border-radius: 25px;
+  border: none;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9em;
+  // font-weight: bold;
+  padding: 1em 2em;
+  width: max-content;
+}
+
+.card-1 button {
+  color: var(--color-bright-orange);
+}
+
+.card-2 button {
+  color: var(--color-dark-cyan);
+}
+
+.card-2 button {
+  color: var(--color-very-dark-cyan);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin-top: 2.5em;
+    max-width: 900px;
+  }
+
+  .card-wrapper {
+    flex-direction: row;
+  }
+
+  .card button {
+    margin-top: 3em;
+  }
+
+  .card:first-child {
+    border-top-right-radius: initial;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .card:last-child {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
 }
