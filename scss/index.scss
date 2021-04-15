@@ -82,11 +82,18 @@ body {
   background-color: #fff;
   border-radius: 25px;
   border: none;
+  border: 0.2em solid #fff;
+  cursor: pointer;
   font-family: "Lexend Deca", sans-serif;
-  font-size: 0.9em;
-  // font-weight: bold;
+  font-size: 0.95em;
+  font-weight: bold;
   padding: 1em 2em;
   width: max-content;
+}
+
+.card button:hover {
+  color: #fff;
+  background-color: transparent;
 }
 
 .card-1 button {
