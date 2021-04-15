@@ -66,17 +66,17 @@ body {
     line-height: 1.8em;
   }
 
-  & button {
-    appearance: none;
+  & .learn-more-link {
     background-color: hsl(0, 0%, 100%);
+    text-decoration: none;
     border-radius: 25px;
-    border: none;
     border: 0.2em solid var(--color-white);
     cursor: pointer;
+    display: inline-block;
     font-family: "Lexend Deca", sans-serif;
-    // font-size: 0.95em;
+    // font-size: 1em;
     // font-weight: bold;
-    padding: 1em 2.5em;
+    padding: 0.5em 1.5em;
     width: max-content;
     transition: background-color, color 0.2s linear;
 
@@ -90,7 +90,7 @@ body {
 .card-1 {
   background-color: var(--color-bright-orange);
 
-  & button {
+  & .learn-more-link {
     color: var(--color-bright-orange);
   }
 }
@@ -98,7 +98,7 @@ body {
 .card-2 {
   background-color: var(--color-dark-cyan);
 
-  & button {
+  & .learn-more-link {
     color: var(--color-dark-cyan);
   }
 }
@@ -106,7 +106,7 @@ body {
 .card-3 {
   background-color: var(--color-very-dark-cyan);
 
-  & button {
+  & .learn-more-link {
     color: var(--color-very-dark-cyan);
   }
 }
@@ -127,7 +127,7 @@ body {
   }
 
   .card {
-    & button {
+    & .learn-more-link {
       margin-top: 3em;
     }
 
