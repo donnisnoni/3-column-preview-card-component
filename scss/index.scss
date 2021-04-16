@@ -117,11 +117,13 @@ body {
 
 @media screen and (min-width: 768px) {
   .container {
-    margin-top: 2.5em;
+    // margin-top: 2.5em;
     max-width: 900px;
   }
 
   .card-wrapper {
+    margin-top: 11.334em;
+    margin-bottom: 11.334em;
     flex-direction: row;
   }
 
