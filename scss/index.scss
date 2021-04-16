@@ -1,0 +1,147 @@
+:root {
+  --color-bright-orange: hsl(31, 77%, 52%);
+  --color-dark-cyan: hsl(184, 100%, 22%);
+  --color-very-dark-cyan: hsl(179, 100%, 13%);
+  --color-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --color-very-light-gray: hsl(0, 0%, 95%);
+  --color-white: hsl(0, 0%, 100%);
+  --card-border-radius-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  background-color: var(--color-very-light-gray);
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  min-height: inherit;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 5em 1em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  color: var(--color-transparent-white);
+  padding: 3em;
+
+  &:first-child {
+    border-top-left-radius: var(--card-border-radius-size);
+    border-top-right-radius: var(--card-border-radius-size);
+  }
+
+  &:last-child {
+    border-bottom-left-radius: var(--card-border-radius-size);
+    border-bottom-right-radius: var(--card-border-radius-size);
+  }
+
+  & .icon {
+    width: 4em;
+  }
+
+  & h2 {
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: var(--color-white);
+  }
+
+  & p {
+    line-height: 1.8em;
+  }
+
+  & .learn-more-link {
+    background-color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    border-radius: 25px;
+    border: 0.2em solid var(--color-white);
+    cursor: pointer;
+    font-family: "Lexend Deca", sans-serif;
+    // font-size: 1em;
+    // font-weight: bold;
+    padding: 0.5em 1.5em;
+    width: max-content;
+    transition: background-color, color 0.2s linear;
+
+    &:hover {
+      color: var(--color-white);
+      background-color: transparent;
+    }
+  }
+}
+
+.card-1 {
+  background-color: var(--color-bright-orange);
+
+  & .learn-more-link {
+    color: var(--color-bright-orange);
+  }
+}
+
+.card-2 {
+  background-color: var(--color-dark-cyan);
+
+  & .learn-more-link {
+    color: var(--color-dark-cyan);
+  }
+}
+
+.card-3 {
+  background-color: var(--color-very-dark-cyan);
+
+  & .learn-more-link {
+    color: var(--color-very-dark-cyan);
+  }
+}
+
+.attribution {
+  text-align: center;
+  margin: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    // margin-top: 2.5em;
+    max-width: 920px;
+  }
+
+  .card-wrapper {
+    margin-top: 11.334em;
+    margin-bottom: 11.334em;
+    flex-direction: row;
+  }
+
+  .card {
+    & .learn-more-link {
+      margin-top: 3.35em;
+    }
+
+    &:first-child {
+      border-top-right-radius: initial;
+      border-top-left-radius: var(--card-border-radius-size);
+      border-bottom-left-radius: var(--card-border-radius-size);
+    }
+
+    &:last-child {
+      border-bottom-left-radius: 0;
+      border-top-right-radius: var(--card-border-radius-size);
+      border-bottom-right-radius: var(--card-border-radius-size);
+    }
+  }
+}
