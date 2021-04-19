@@ -17,7 +17,7 @@ jobs:
           fetch-depth: 0
 
       - name: Compile SCSS
-        run: sass  ./scss/index.scss  ./assets/style.css
+        run: npx sass  ./scss/index.scss  ./assets/style.css
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
