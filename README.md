@@ -39,7 +39,7 @@ Users should be able to:
 
 <!-- - Solution URL: [Add solution URL here](https://your-solution-url.com) -->
 
-- Live Site URL: [front-end-mentor-1.surge.sh](http://front-end-mentor-1.surge.sh)
+- Live Site URL: [donnisnoni.github.io/3-column-preview-card-component](https://donnisnoni.github.io/3-column-preview-card-component)
 
 ### Built with
 
